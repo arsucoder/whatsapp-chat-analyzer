@@ -15,7 +15,9 @@ This project analyzes exported WhatsApp chats and provides useful insights such 
 
 This project is **deployed and available online**.
 
-👉 **Live Demo:** https://whatsapp-chat-analyzer-arsu.streamlit.app/
+👉 **Live Demo:** 
+
+* https://whatsapp-chat-analyzer-arsu.streamlit.app/
 
 ## 🛠️ Technologies Used
 
