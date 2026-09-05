@@ -17,7 +17,7 @@ This project is **deployed and available online**.
 
 👉 **Live Demo:** 
 
-* https://whatsapp-chat-analyzer-arsu.streamlit.app/
+* https://whatsapp-chat-analyzer-arsu.streamlit.app//
 
 ## 🛠️ Technologies Used
 
