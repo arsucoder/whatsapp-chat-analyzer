@@ -135,6 +135,7 @@ import helper
 import matplotlib.pyplot as plt
 import seaborn as sns
 import html
+from textwrap import dedent
 
 # ==========================================================
 # PAGE CONFIG
@@ -928,46 +929,53 @@ if uploaded_file is not None:
 # EMPTY STATE
 # ======================================================
 
+
 else:
 
-    st.markdown("""
-    <div style="
-        background:#18262D;
-        border:1px solid #2B414A;
-        border-radius:18px;
-        padding:55px 25px;
-        text-align:center;
-        margin-top:30px;">
+    st.markdown(
+        dedent("""
+        <div style="
+            background:#18262D;
+            border:1px solid #2B414A;
+            border-radius:18px;
+            padding:55px 25px;
+            text-align:center;
+            margin-top:30px;">
 
-        <div style="font-size:65px;">📊</div>
+            <div style="font-size:65px;">📊</div>
 
-        <h2 style="color:#E9EDEF;">
-            Your Chat, Your Insights
-        </h2>
+            <h2 style="color:#E9EDEF;">
+                Your Chat, Your Insights
+            </h2>
 
-        <p style="
-            color:#AEBAC1;
-            font-size:16px;
-            max-width:600px;
-            margin:auto;">
-            Upload your WhatsApp exported chat from the sidebar
-            and generate detailed insights about messages,
-            activity patterns, frequently used words and emojis.
-        </p>
+            <p style="
+                color:#AEBAC1;
+                font-size:16px;
+                max-width:600px;
+                margin:auto;">
+                Upload your WhatsApp exported chat from the sidebar
+                and generate detailed insights about messages,
+                activity patterns, frequently used words and emojis.
+            </p>
 
-        <br>
+            <br>
 
-        <div style="color:#25D366; font-weight:700;">
-            Upload → Select User → Generate Analysis
+            <div style="color:#25D366; font-weight:700;">
+                Upload → Select User → Generate Analysis
+            </div>
+
         </div>
+        """),
+        unsafe_allow_html=True
+    )
 
-    </div>
-    """, unsafe_allow_html=True)
-
-    st.markdown("""
-    <div class="footer">
-        Made with ❤️ by <span>arsu</span>
-        <br><br>
-        WhatsApp Chat Analyzer | Powered by Streamlit
-    </div>
-    """, unsafe_allow_html=True)
+    st.markdown(
+        dedent("""
+        <div class="footer">
+            Made with ❤️ by <span>arsu</span>
+            <br><br>
+            WhatsApp Chat Analyzer | Powered by Streamlit
+        </div>
+        """),
+        unsafe_allow_html=True
+    )
