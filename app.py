@@ -923,11 +923,12 @@ if uploaded_file is not None:
         """, unsafe_allow_html=True)
 
 
-else:
 
-    # ======================================================
-    # EMPTY STATE
-    # ======================================================
+# ======================================================
+# EMPTY STATE
+# ======================================================
+
+else:
 
     st.markdown("""
     <div style="
@@ -970,4 +971,3 @@ else:
         WhatsApp Chat Analyzer | Powered by Streamlit
     </div>
     """, unsafe_allow_html=True)
-
